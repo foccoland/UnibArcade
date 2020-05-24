@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/profile_badge_layer"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profile_badge_shape"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileCircleView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/profileWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benvenuto"
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_toEndOf="@id/profileCircleView"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/profileNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nickname!"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toEndOf="@id/profileCircleView"
+        android:layout_alignTop="@id/profileWelcome"/>
+
+</RelativeLayout>

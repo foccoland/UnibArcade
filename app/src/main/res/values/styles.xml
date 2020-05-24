@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- ***************** -->
+    <!-- Default App Style -->
+    <!-- ***************** -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentPrimary</item>
+        <item name="android:fontFamily">@font/zrnic</item>
+        <item name="android:textSize">13sp</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- ######################## -->
+    <!-- App Special Views Styles -->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:fontFamily">@font/zrnic</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- **************** -->
+    <!-- App Views Styles -->
+    <!-- **************** -->
+
+    <!-- ############# -->
+    <!-- Button Styles -->
+
+    <!-- Main Button Style -->
+    <style name="Ripple" parent="AppTheme">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/btnDefaultTextSize</item>
+        <item name="android:fontFamily">@font/zrnic</item>
+        <item name="android:elevation">@dimen/btnElevation</item>
+    </style>
+
+    <!-- Main Button Style -->
+    <style name="RippleMain" parent="Ripple">
+        <item name="android:textSize">@dimen/btnMainDefaultTextSize</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Secondary Button Style -->
+    <style name="RippleSecondary" parent="Ripple">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Tertiary Button Style -->
+    <style name="RippleTertiary" parent="Ripple">
+        <item name="android:textColor">@color/colorPrimarySpaceInvaders</item>
+    </style>
+
+    <!-- Special Button Style -->
+    <style name="RippleSpecial" parent="Ripple">
+        <item name="android:textSize">@dimen/btnSpecialTextSize</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Delete Button Style -->
+    <style name="RippleDelete" parent="Ripple">
+        <item name="android:textSize">@dimen/btnMainDefaultTextSize</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- ############ -->
+    <!-- Texts Styles -->
+
+    <!-- TextView Style -->
+    <style name="AppTheme.TextView">
+        <item name="android:fontFamily">@font/zrnic</item>
+        <item name="android:textSize">@dimen/btnDefaultTextSize</item>
+        <item name="android:elevation">@dimen/editTextElevation</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="AppTheme.EditText">
+        <item name="android:fontFamily">@font/zrnic</item>
+        <item name="android:textSize">@dimen/editTextDefaultTextSize</item>
+        <item name="android:elevation">@dimen/editTextElevation</item>
+        <item name="android:backgroundTint">@color/colorAccentPrimary</item>
+        <item name="android:textColorHint">@color/colorAccentPrimaryWithAlpha</item>
+        <item name="android:textColor">@color/colorAccentPrimary</item>
+    </style>
+
+    <!-- ############### -->
+    <!-- Toolbars Styles -->
+
+    <style name="AppTheme.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Expanded Toolbar Style -->
+    <style name="AppTheme.ExpandedToolbar" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">@dimen/toolbarExpandedTextSize</item>
+        <item name="android:textColor">@color/colorAccentPrimary</item>
+    </style>
+
+    <!-- Collapsed Toolbar Style -->
+    <style name="AppTheme.CollapsedToolbar">
+        <item name="android:textSize">@dimen/toolbarCollapsedTextSize</item>
+        <item name="android:textColor">@color/colorAccentPrimary</item>
+    </style>
+
+
+    <!-- ##################### -->
+    <!-- Stylable Toast Styles -->
+
+    <!-- Successful Toast Style -->
+    <style name="successfulToast">
+        <item name="stColorBackground">@color/colorPrimarySpaceInvadersWithAlpha</item>
+        <item name="stFont">@font/pixelmix</item>
+        <item name="stTextSize">12sp</item>
+        <item name="stIconStart">@drawable/account_circle</item>
+        <item name="stStrokeWidth">6dp</item>
+        <item name="stStrokeColor">@color/colorAccentSpaceInvadersWithAlpha</item>
+        <item name="stTextColor">@color/colorAccentSpaceInvaders</item>
+    </style>
+
+    <!-- Error Toast Style -->
+    <style name="errorToast">
+        <item name="stColorBackground">@color/colorSecondarySnakeWithAlpha</item>
+        <item name="stFont">@font/pixelmix</item>
+        <item name="stTextSize">12sp</item>
+        <item name="stIconStart">@drawable/error</item>
+        <item name="stStrokeWidth">6dp</item>
+        <item name="stStrokeColor">@color/colorPrimarySnakeLightWithAlpha</item>
+        <item name="stTextColor">@color/colorPrimarySnakeLight</item>
+    </style>
+
+    <!-- Warning Toast Style -->
+    <style name="warningToast">
+        <item name="stColorBackground">@color/colorAccentPrimaryDarker</item>
+        <item name="stFont">@font/pixelmix</item>
+        <item name="stTextSize">12sp</item>
+        <item name="stIconStart">@drawable/warning</item>
+        <item name="stStrokeWidth">6dp</item>
+        <item name="stStrokeColor">@color/colorAccentPrimaryWithAlpha</item>
+        <item name="stTextColor">@color/colorAccentPrimary</item>
+        <item name="stLength">LONG</item>
+    </style>
+
+</resources>

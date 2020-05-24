@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "164113311626",
+    "firebase_url": "https://unibarcade.firebaseio.com",
+    "project_id": "unibarcade",
+    "storage_bucket": "unibarcade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164113311626:android:b5c856aea9dfbc59ff4a73",
+        "android_client_info": {
+          "package_name": "it.di.uniba.sms1920.teambarrella.unibarcade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164113311626-38116daugc48br8s16gti2g8kmmotl3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.di.uniba.sms1920.teambarrella.unibarcade",
+            "certificate_hash": "cd2a9c68136c2bb0d7503def245e434b5d8d9132"
+          }
+        },
+        {
+          "client_id": "164113311626-cpt6rsu800j3chnice3nijjo72vtpcm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.di.uniba.sms1920.teambarrella.unibarcade",
+            "certificate_hash": "154e0f1e55e4670781f521d3c955c74f3be06d66"
+          }
+        },
+        {
+          "client_id": "164113311626-m3vlbjot9nrikkjlvha0svpt85u9m3cl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp4PLAE4bHWwy-EAUebj9sif3FMLHCC8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164113311626-m3vlbjot9nrikkjlvha0svpt85u9m3cl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

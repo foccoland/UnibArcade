@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorAccentPrimaryDark">
+
+        <item android:id="@android:id/background">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="@color/colorPrimaryVeryLight"
+                    android:endColor="@color/colorPrimary"/>
+                <stroke
+                    android:width="5dp"
+                    android:color="@color/colorPrimaryDark"/>
+                <corners
+                    android:bottomRightRadius="50dp"
+                    android:bottomLeftRadius="50dp"
+                    android:topLeftRadius="50dp"
+                    android:topRightRadius="50dp"/>
+            </shape>
+        </item>
+</ripple>

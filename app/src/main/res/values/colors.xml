@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Super Mario Blue Sky Color-->
+    <color name="smSkyColor">#4C7AD2</color>
+    <color name="smSecondary">#355694</color>
+
+    <!-- PacMan Black Color-->
+    <color name="pmBlack">#000000</color>
+    <color name="pmSecondary">#BF000000</color>
+
+    <!-- MotorBike Green Color-->
+    <color name="mbGreen">#80D010</color>
+    <color name="mbSecondary">#689F38</color>
+
+    <!-- App Colors -->
+    <color name="colorPrimary">#a06dc4</color>
+    <color name="colorPrimaryWithAlpha">#CCA06DC4</color>
+    <color name="colorPrimaryDark">#BF421565</color>
+    <color name="colorSecondary">#704093</color>
+    <color name="colorPrimaryVeryDark">#32274D</color>
+    <color name="colorPrimaryLight">#d29cf7</color>
+    <color name="colorPrimaryVeryLight">#BFDEBCF5</color>
+    <color name="colorAccentPrimary">#FFBC15</color>
+    <color name="colorAccentPrimaryDarker">#C99413</color>
+    <color name="colorAccentPrimaryWithAlpha">#CCFFBC15</color>
+    <color name="colorAccentPrimaryDark">#FF5F01</color>
+    <color name="colorAccentPrimaryDarkWithAlpha">#BFFF5F01</color>
+    <color name="colorAccentSecondaryWithAlpha">#BFB8FF5C</color>
+    <color name="colorAccentSecondary">#B8FF5C</color>
+    <color name="colorTransparent">#0C000000</color>
+
+    <!-- Space invaders Colors -->
+    <color name="colorPrimarySpaceInvaders">#4D8996</color>
+    <color name="colorPrimarySpaceInvadersLight">#74ACB8</color>
+    <color name="colorPrimarySpaceInvadersWithAlpha">#B34D8996</color>
+    <color name="colorPrimaryDarkSpaceInvaders">#32274D</color>
+    <color name="colorAccentSpaceInvaders">#B8FF5C</color>
+    <color name="colorAccentSpaceInvadersWithAlpha">#CCB8FF5C</color>
+    <color name="colorSecondarySpaceInvaders">#84cb24</color>
+
+    <!-- arkanoid Colors -->
+    <color name="colorPrimaryArkanoid">#943963</color>
+    <color name="colorPrimaryArkanoidLight">#C789A5</color>
+    <color name="colorPrimaryDarkArkanoid">#32274D</color>
+    <color name="colorSecondaryArkanoid">#c76890</color>
+    <color name="colorAccentArkanoid">#FCFF49</color>
+
+    <!-- Cannonball Colors -->
+    <color name="colorPrimaryCannonball">#474092</color>
+    <color name="colorPrimaryDarkCannonball">#111964</color>
+    <color name="colorSecondaryCannonball">#00b4ca</color>
+    <color name="colorSecondaryCannonballLight">#92DEE7</color>
+    <color name="colorAccentCannonball">#51E6FD</color>
+    <color name="DarkSlateGrey">#3c4f5d</color>
+
+    <!-- Snake Colors -->
+    <color name="colorPrimarySnake">#a06dc4</color>
+    <color name="colorPrimaryDarkSnake">#704093</color>
+    <color name="colorPrimarySnakeLight">#F36C71</color>
+    <color name="colorPrimarySnakeLightWithAlpha">#B3EF3C43</color>
+    <color name="colorSecondarySnake">#b5001b</color>
+    <color name="colorSecondarySnakeWithAlpha">#B3B5001B</color>
+    <color name="colorSecondarySnakeLightWithAlpha">#B3DA5368</color>
+
+</resources>

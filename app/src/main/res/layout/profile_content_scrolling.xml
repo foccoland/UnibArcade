@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".account.ProfileActivity"
+    tools:showIn="@layout/activity_profile"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivProfilePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:padding="15dp"
+                android:src="@drawable/account_circle"
+                android:visibility="invisible"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePhoto"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTintMode="add"
+                android:clickable="true"
+                android:src="@drawable/incomplete_avatar" />
+
+            <ImageView
+                android:id="@+id/editPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_edit"
+                android:clickable="true"
+                android:elevation="@dimen/btnElevation"
+                android:padding="15dp"
+                android:src="@drawable/addphoto" />
+
+            <ImageView
+                android:id="@+id/editGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/editPhoto"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ripple_edit"
+                android:clickable="true"
+                android:elevation="@dimen/btnElevation"
+                android:padding="15dp"
+                android:src="@drawable/gallery" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/editProfileDummy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/ripple_edit"
+                android:clickable="true"
+                android:padding="15dp"
+                android:src="@drawable/fields_ok"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtProfileData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/editProfileDummy"
+                android:paddingVertical="16dp"
+                android:textSize="@dimen/textViewSectionTitle"
+                android:text="@string/strData"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/zrnic"
+                android:textColor="@color/colorAccentPrimaryWithAlpha"
+                android:layout_weight="90"/>
+
+            <ImageView
+                android:id="@+id/editProfileConfirm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toStartOf="@id/toggleProfile"
+                android:layout_marginEnd="80dp"
+                android:elevation="@dimen/btnElevation"
+                android:src="@drawable/confirm"
+                android:visibility="invisible" />
+
+            <ToggleButton
+                android:id="@+id/toggleProfile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginVertical="15dp"
+                android:layout_marginEnd="28dp"
+                android:layout_weight="3"
+                android:background="@drawable/toggle_edit_profile"
+                android:clickable="true"
+                android:elevation="@dimen/btnElevation"
+                android:padding="15dp"
+                android:src="@drawable/edit" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:padding="15dp"
+                android:src="@drawable/icon_nickname"
+                android:layout_weight="10"/>
+
+            <TextView
+                android:id="@+id/tvNickname"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivNickname"
+                android:layout_toRightOf="@id/ivNickname"
+                android:padding="16dp"
+                android:textSize="@dimen/textViewDefaultTextSize"
+                android:text="Foccoland"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryVeryLight" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivNickname"
+                android:visibility="invisible"
+                android:theme="@style/AppTheme.EditText"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editNickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivNickname"
+                    android:padding="16dp"
+                    android:theme="@style/AppTheme.EditText"
+                    android:visibility="invisible"
+                    android:elevation="0dp"
+                    android:textSize="@dimen/textViewDefaultTextSize"
+                    android:hint="@string/strNickname"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimaryVeryLight" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:padding="15dp"
+                android:src="@drawable/icon_usermail"
+                android:layout_weight="10"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivEmail"
+                android:padding="16dp"
+                android:textSize="@dimen/textViewDefaultTextSize"
+                android:text="giannellifabio93@gmail.com"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryVeryLight"
+                android:layout_weight="90"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivEmail"
+                android:visibility="invisible"
+                android:theme="@style/AppTheme.EditText"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivEmail"
+                    android:padding="16dp"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/textViewDefaultTextSize"
+                    android:elevation="0dp"
+                    android:hint="@string/strEmail"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimaryVeryLight"
+                    android:layout_weight="90"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlEmailSent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/emailSent"
+                android:padding="15dp"
+                android:textColor="@color/colorAccentSecondary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/editPasswordDummy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/ripple_edit"
+                android:clickable="true"
+                android:padding="15dp"
+                android:src="@drawable/fields_ok"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtPasswordData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/editPasswordDummy"
+                android:paddingVertical="16dp"
+                android:textSize="@dimen/textViewSectionTitle"
+                android:text="@string/strPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/zrnic"
+                android:textColor="@color/colorAccentPrimaryWithAlpha"
+                android:layout_weight="90"/>
+
+            <ImageView
+                android:id="@+id/editPasswordConfirm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginEnd="80dp"
+                android:layout_weight="3"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:elevation="@dimen/btnElevation"
+                android:src="@drawable/confirm"
+                android:visibility="invisible" />
+
+            <ToggleButton
+                android:id="@+id/togglePassword"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="3"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/toggle_edit_profile"
+                android:clickable="true"
+                android:elevation="@dimen/btnElevation"
+                android:padding="15dp"
+                android:src="@drawable/edit" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:padding="15dp"
+                android:src="@drawable/icon_password"
+                android:layout_weight="10"/>
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivPassword"
+                android:padding="16dp"
+                android:textSize="@dimen/textViewDefaultTextSize"
+                android:text="********"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryVeryLight"
+                android:layout_weight="90"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivPassword"
+                android:visibility="invisible"
+                android:theme="@style/AppTheme.EditText"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editOldPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivPassword"
+                    android:padding="16dp"
+                    android:theme="@style/AppTheme.EditText"
+                    android:textSize="@dimen/textViewDefaultTextSize"
+                    android:inputType="textPassword"
+                    android:hint="@string/strOldPassword"
+                    android:elevation="0dp"
+                    android:visibility="invisible"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimaryVeryLight"
+                    android:layout_weight="90"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/confirmPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:padding="15dp"
+                android:src="@drawable/icon_password"
+                android:layout_weight="10"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivConfirmPassword"
+                android:theme="@style/AppTheme.EditText"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@id/ivConfirmPassword"
+                    android:padding="16dp"
+                    android:inputType="textPassword"
+                    android:theme="@style/AppTheme.EditText"
+                    android:textSize="@dimen/textViewDefaultTextSize"
+                    android:hint="@string/strNewPassword"
+                    android:elevation="0dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimaryVeryLight"
+                    android:layout_weight="90"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/profile_content_divider" />
+
+
+        <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="?attr/selectableItemBackground"
+             android:clickable="true"
+             android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/txtProfileScores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_centerHorizontal="true"
+                android:paddingVertical="18sp"
+                android:textSize="@dimen/textViewSectionTitle"
+                android:text="@string/strScores"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/zrnic"
+                android:textColor="@color/colorAccentPrimaryWithAlpha" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivGameItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/spaceinvaders_mini" />
+
+            <TextView
+                android:id="@+id/txtSpaceInvadersScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivGameItem1"
+                android:layout_toRightOf="@id/ivGameItem1"
+                android:padding="16dp"
+                android:ellipsize="end"
+                android:textSize="@dimen/textViewDefaultTextSize"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryVeryLight" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivGameItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:padding="16dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/arkanoid_mini"/>
+
+            <TextView
+                android:id="@+id/txtArkanoidScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivGameItem2"
+                android:layout_toRightOf="@id/ivGameItem2"
+                android:padding="16dp"
+                android:textSize="@dimen/textViewDefaultTextSize"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryVeryLight" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivGameItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/cannonball_mini" />
+
+            <TextView
+                android:id="@+id/txtCannonScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivGameItem3"
+                android:textSize="@dimen/textViewDefaultTextSize"
+                android:layout_toRightOf="@id/ivGameItem3"
+                android:padding="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryVeryLight" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:id="@+id/ivGameItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/snake_mini" />
+
+            <TextView
+                android:id="@+id/txtSnakeScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivGameItem4"
+                android:layout_toRightOf="@id/ivGameItem4"
+                android:padding="16dp"
+                android:ellipsize="end"
+                android:textSize="@dimen/textViewDefaultTextSize"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryVeryLight" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/profile_content_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnDeleteProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="50dp"
+                android:background="@drawable/ripple_delete_profile"
+                android:theme="@style/RippleDelete"
+                android:text="@string/strDeleteProfile"/>
+
+            <TextView
+                android:id="@+id/txtAreYouSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_centerHorizontal="true"
+                android:paddingVertical="18sp"
+                android:textSize="@dimen/textViewSectionTitle"
+                android:text="@string/strAreYouSure"
+                android:visibility="gone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/zrnic"
+                android:textColor="@color/colorAccentPrimaryWithAlpha" />
+
+            <Button
+                android:id="@+id/btnConfirmDelete"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="80dp"
+                android:layout_margin="70dp"
+                android:visibility="gone"
+                android:background="@drawable/ripple_confirm_delete_profile"
+                android:theme="@style/RippleDelete"
+                android:text="@string/strYes"/>
+
+            <Button
+                android:id="@+id/btnCancelDelete"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:layout_margin="70dp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:background="@drawable/ripple_cancel_delete_profile"
+                android:theme="@style/RippleDelete"
+                android:text="@string/strNo"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

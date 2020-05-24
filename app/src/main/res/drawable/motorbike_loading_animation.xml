@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/motorbikeloading_01" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_02" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_03" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_04" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_05" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_06" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_07" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_08" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_09" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_10" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_11" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_12" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_13" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_14" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_15" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_16" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_17" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_18" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_19" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_20" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_21" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_22" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_23" android:duration="50" />
+    <item android:drawable="@drawable/motorbikeloading_24" android:duration="50" />
+</animation-list>

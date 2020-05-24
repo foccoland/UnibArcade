@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/supermarioloading_1" android:duration="80" />
+    <item android:drawable="@drawable/supermarioloading_2" android:duration="80" />
+    <item android:drawable="@drawable/supermarioloading_3" android:duration="80" />
+    <item android:drawable="@drawable/supermarioloading_4" android:duration="80" />
+    <item android:drawable="@drawable/supermarioloading_5" android:duration="80" />
+    <item android:drawable="@drawable/supermarioloading_6" android:duration="80" />
+</animation-list>

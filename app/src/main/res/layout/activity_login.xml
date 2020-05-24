@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarDefaultHeight"
+        android:theme="@style/AppTheme.Toolbar"
+        android:elevation="2dp"
+        app:titleTextColor="@color/colorAccentPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/form_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/form_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_round"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlbLogin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="@dimen/editTextDefaultWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/AppTheme.EditText"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmailLogin"
+            android:layout_width="@dimen/editTextDefaultWidth"
+            android:layout_height="@dimen/editTextDefaultHeight"
+            android:layout_marginTop="30dp"
+            android:theme="@style/AppTheme.EditText"
+            android:hint="@string/strEmail"
+            android:textColor="@color/colorAccentPrimary"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="@dimen/editTextDefaultWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/AppTheme.EditText"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPwdLogin"
+            android:layout_width="@dimen/editTextDefaultWidth"
+            android:layout_height="@dimen/editTextDefaultHeight"
+            android:layout_marginTop="25dp"
+            android:hint="@string/strPassword"
+            android:textColor="@color/colorAccentPrimary"
+            android:theme="@style/AppTheme.EditText"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:theme="@style/RippleMain"
+        android:background="@drawable/ripple_main"
+        android:text="@string/strLogin"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/txtClickHere" />
+
+    <Button
+        android:id="@+id/btnGoogleLogin"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:theme="@style/RippleMain"
+        android:background="@drawable/ripple_tertiary"
+        android:text="@string/strGoogleLogin"
+        android:textSize="18dp"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@drawable/google"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/txtNotRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/zrnic"
+        android:text="@string/strNotRegistered"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccentSecondaryWithAlpha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <TextView
+        android:id="@+id/txtClickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/zrnic"
+        android:text="@string/strClickHere"
+        android:textStyle="bold"
+        android:focusable="true"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccentSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNotRegistered" />
+
+    <TextView
+        android:id="@+id/txtForgottenPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/zrnic"
+        android:text="@string/strForgottenPwd"
+        android:focusable="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccentSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtClickHere" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

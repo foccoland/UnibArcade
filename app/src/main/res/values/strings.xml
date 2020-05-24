@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">UnibArcade</string>
+
+    <!-- Contestuals -->
+    <string name="strPlay">Play</string>
+    <string name="strStart">Start</string>
+
+    <!-- Games -->
+    <string name="strSpaceInvaders">Space Invaders</string>
+    <string name="strArkanoid">Arkanoid</string>
+    <string name="strCannonball">Cannon Ball</string>
+    <string name="strSnake">Snake</string>
+
+    <!-- Games descriptions -->
+    <string name="strSpaceInvadersDescription">Throw yourself in a new adventure into the space!</string>
+    <string name="strArkanoidDescription">Break the rules, break out the game!</string>
+    <string name="strCannonballDescription">It\'s time to call your cannon to duty!</string>
+    <string name="strSnakeDescription">Turn around and catch that d**n apple!</string>
+
+    <!-- Snake-->
+    <string name="mode_ready">Snake\nTouch Screen To Play</string>
+    <string name="mode_lose">Game Over Score: %1$d  \nTouch Screen To Play</string>
+    <string name="mode_pause">Paused: \nTouch Screen To Play</string>
+
+    <!-- Various -->
+    <string name="strChooseGame">Choose the game</string>
+    <string name="strRegister">Register</string>
+    <string name="strLogin">Login</string>
+    <string name="strGoogleRegister">Register with Google</string>
+    <string name="strGoogleLogin">Sign in with Google</string>
+    <string name="strOffline">Offline mode</string>
+
+    <!-- Cannon -->
+    <string name="results_format">
+      Shots fired: %1$d\nTotal Score: %2$d</string>
+    <string name="reset_game">Tap to Play</string>
+    <string name="first_game">Welcome to Cannon!</string>
+    <string name="win">You win!</string>
+    <string name="lose">You lose!</string>
+    <string name="time_remaining_format">
+      Time remaining: %.1f seconds</string>
+    <string name="title_activity_score">ScoreActivity</string>
+
+    <!-- Register Page -->
+    <string name="strNick">Nickname</string>
+    <string name="strEmail">Email</string>
+    <string name="strPwd">Password</string>
+    <string name="strPwdRepeat">Repeat password</string>
+
+    <string name="strNotRegistered">Not registered?</string>
+    <string name="strClickHere">Click here!</string>
+    <string name="strPwdError">Passwords don\'t match. Try again</string>
+    <string name="strEmptyFields">Field is empty</string>
+    <string name="strRegisteredSucc">Registered Successfully</string>
+    <string name="strEmailAlreadyExists">Email already exists</string>
+    <string name="strNickAlreadyExists">Nickname already exists</string>
+    <string name="strNickAndEmailAlreadyExists">Nickname and Email already exists</string>
+    <string name="strLoginSucc">Login successfully</string>
+    <string name="strLoginError">Wrong email or password</string>
+    <string name="strPwdWrong">Wrong password</string>
+    <string name="strPersonalScores">Personal Scores</string>
+    <string name="strScore">Score</string>
+    <string name="strProfile">Profile</string>
+    <string name="strPassword">Password</string>
+    <string name="strOldPassword">Old Password</string>
+    <string name="strConfirmPassword">Confirm Password</string>
+    <string name="strNickname">Nickname</string>
+    <string name="strScores">Scores</string>
+    <string name="strPicture">Profile picture</string>
+    <string name="strData">Profile data</string>
+    <string name="strOk">OK</string>
+    <string name="strCancel">Cancel</string>
+
+    <string name="strPwdTooShort">Password too short, enter minimum 6 characters</string>
+    <string name="strAuthFailed">Authentication failed</string>
+
+    <!-- Login/Logout -->
+    <string name="strLoginFailed">Login failed</string>
+    <string name="strLogout">Logout</string>
+    <string name="strResetEmail">Enter your register email</string>
+    <string name="strSentEmailForReset">We have sent you instructions to reset your password!</string>
+    <string name="emailSent">A verification email has been sent.</string>
+    <string name="strForgottenPwd">Forgot your password? Click here!</string>
+    <string name="strNoLoggedUser">Login for the online rankings!</string>
+
+    <!-- Firebase Auth Error Messages -->
+    <string name="strMailAlreadyExists">The email address is already in use by another account.</string>
+    <string name="strIncorrectEmail">The email address is badly formatted.</string>
+    <string name="strReAuthenticate">This operation is sensitive and requires recent authentication. Log in again before retrying this request.</string>
+
+    <string name="strNoUserExists">There is no user record corresponding to this identifier.</string>
+    <string name="strProfileNotDeleted">Profile not deleted</string>
+    <string name="strSamePassword">Passwords must not be the same</string>
+    <string name="strNickNotUpdated">Nickname not updated</string>
+    <string name="strEmailNotUpdated">Email not updated</string>
+    <string name="strPwdNotUpdated">Password not updated</string>
+    <string name="strAreYouSure">Are you sure?</string>
+    <string name="strYes">Yes</string>
+    <string name="strNo">No</string>
+
+
+
+    <string name="strUnusualActivity">We have blocked all requests from this device due to unusual activity. Try again later.</string>
+
+    <string name="updatedFailed">Updated failed!</string>
+
+    <string name="strDeletedProfile">Profile deleted!</string>
+    <string name="strUpdatedPwd">User password updated.</string>
+    <string name="strFailedUpdatedPwd">User password not updated.</string>
+    <string name="strFailedSend">Failed to send reset email!</string>
+    <string name="strDeleteProfile">Delete Profile</string>
+    <string name="strDelete">Delete</string>
+
+    <string-array name="GameList">
+        <item>Snake</item>
+        <item>Arkanoid</item>
+        <item>Space Invaders</item>
+        <item>Cannon</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strFinalScore">Final Score: %1$d</string>
+
+    <string name="strPlayAgain">Play Again</string>
+    <string name="strExit">Quit</string>
+    <string name="strNewPassword">New Password</string>
+    <string name="strDismiss">Dismiss</string>
+    <string name="strShareApp">Share UnibArcade to the world!</string>
+    <string name="strPermissionNeeded">Permission needed</string>
+    <string name="strMessagePermission">This permission is necessary to take a picture.</string>
+    <string name="first_game_subtitle">Tap to play!</string>
+
+
+</resources>

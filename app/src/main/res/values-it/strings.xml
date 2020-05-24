@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="strNick">Nome Utente</string>
+    <string name="strEmail">Email</string>
+    <string name="strPwd">Password</string>
+    <string name="strPwdRepeat">Ripeti password</string>
+    <string name="strRegister">Registrazione</string>
+    <string name="win">Hai vinto!</string>
+    <string name="title_activity_score">ActivityPunteggio</string>
+    <string name="strLogin">Accesso</string>
+    <string name="strGoogleRegister">Registrazione con Google</string>
+    <string name="strGoogleLogin">Accesso con Google</string>
+    <string name="strOffline">Modalita\' Offline</string>
+    <string name="strPlay">Gioca</string>
+    <string name="strChooseGame">Selezionare il gioco:</string>
+    <string name="reset_game">Tap per riavviare</string>
+    <string name="lose">Hai perso!</string>
+
+    <!-- Snake-->
+    <string name="mode_lose">Game Over Punteggio: %1$d \nTocca lo schermo per giocare</string>
+    <string name="mode_pause">Pausa \nTocca lo schermo per giocare</string>
+    <string name="mode_ready">Snake \nTocca lo schermo per giocare</string>
+
+    <string name="results_format">Colpi sparati: %1$d Punteggio Totale: %2$d</string>
+    <string name="first_game">Benvenuto in Cannon!</string>
+    <string name="strArkanoid">Arkanoid</string>
+    <string name="strCannonball">Cannon Ball</string>
+    <string name="app_name">UnibArcade</string>
+    <string name="strSnake">Snake</string>
+
+    <!-- Games descriptions -->
+    <string name="strSpaceInvadersDescription">Lanciati in una nuova avventura nello spazio!</string>
+    <string name="strArkanoidDescription">Rompi le regole e distruggi ogni cosa!</string>
+    <string name="strCannonballDescription">E\' tempo che il cannone riparta all\'attacco!</string>
+    <string name="strSnakeDescription">Ehi guarda, una mela! Non lasciartela scappare!</string>
+
+    <string name="strSpaceInvaders">Space Invaders</string>
+    <string name="strStart">Inizia</string>
+    <string name="time_remaining_format">Tempo restante: %.1f secondi</string>
+    <string name="strEmailAlreadyExists">Email già esistente</string>
+    <string name="strEmptyFields">Il campo e\' vuoto</string>
+    <string name="strNotRegistered">Non sei registrato?</string>
+    <string name="strPwdError">Le password non corrispondono. Riprova</string>
+    <string name="strRegisteredSucc">Registrazione effettuata con successo</string>
+    <string name="strNickAlreadyExists">Nome Utente gia\' esistente</string>
+    <string name="strClickHere">Clicca qui!</string>
+    <string name="strLoginError">Email o Password errata</string>
+    <string name="strLoginSucc">Accesso effettuato con successo</string>
+    <string name="strScore">Punteggi</string>
+    <string name="strProfile">Profilo</string>
+    <string name="strPersonalScores">Punteggi personali</string>
+    <string name="strScores">Punteggi</string>
+    <string name="strData">Dati utente</string>
+    <string name="strNickname">Nome Utente</string>
+    <string name="strPassword">Password</string>
+    <string name="strOldPassword">Vecchia Password</string>
+    <string name="strNewPassword">Nuova Password</string>
+    <string name="strConfirmPassword">Conferma Password</string>
+    <string name="strNickAndEmailAlreadyExists">Nome Utente e Email gia\' esistenti</string>
+    <string name="strOk">OK</string>
+    <string name="strCancel">Annulla</string>
+    <string name="strDeleteProfile">Elimina Profilo</string>
+    <string name="strForgottenPwd">Hai dimenticato la password? Clicca qui!</string>
+    <string name="strProfileNotDeleted">Profilo non eliminato</string>
+    <string name="strSamePassword">Le password non devono coincidere</string>
+    <string name="strAreYouSure">Sei sicuro?</string>
+    <string name="strYes">Si\'</string>
+    <string name="strNo">No</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strAuthFailed">Autenticazione fallita</string>
+    <string name="strPwdTooShort">Password troppo corta, inserisci almeno 6 caratteri</string>
+    <string name="strLoginFailed">Login fallito</string>
+    <string name="strLogout">Logout</string>
+    <string name="strFailedSend">Impossibile inviare l\'email di reset!</string>
+    <string name="strResetEmail">Inserisci la tua email di registrazione</string>
+    <string name="strSentEmailForReset">Abbiamo inviato le istruzioni per reimpostare la password!</string>
+
+    <string name="strNickNotUpdated">Il nickname non e\' stato aggiornato</string>
+    <string name="strEmailNotUpdated">L\'email non e\' stata aggiornata</string>
+    <string name="strPwdNotUpdated">La password non e\' stata aggiornata</string>
+    <string name="strDelete">Elimina</string>
+
+    <string name="strIncorrectEmail">L\'indirizzo mail non e\' valido</string>
+    <string name="strMailAlreadyExists">L\'indirizzo mail e\' gia\' in uso</string>
+    <string name="strNoUserExists">Questo utente non esiste.</string>
+    <string name="strReAuthenticate">Questa operazione richiede un\'autenticazione recente. Effettuare nuovamente il login.</string>
+    <string name="emailSent">Una mail di verifica e\' stata inviata</string>
+    <string name="updatedFailed">Aggiornamento fallito!</string>
+    <string name="strDeletedProfile">Profilo eliminato!</string>
+    <string name="strFailedUpdatedPwd">Password non aggiornata.</string>
+    <string name="strUpdatedPwd">Password aggiornata.</string>
+    <string name="strPwdWrong">Password errata.</string>
+    <string name="strFinalScore">Punteggio finale: %1$d</string>
+    <string name="strPlayAgain">Gioca di nuovo</string>
+    <string name="strExit">Esci</string>
+    <string name="strUnusualActivity">Abbiamo bloccato tutte le richieste a causa di attivita\' insolite. Riprovare piu\' tardi.</string>
+    <string name="strNoLoggedUser">Effettua l\'accesso per rientrare nelle classifiche online!</string>
+    <string name="strDismiss">Ignora</string>
+    <string name="strPicture">Foto Profilo</string>
+    <string name="strShareApp">Condividi UnibArcade in tutto il mondo!</string>
+    <string name="strPermissionNeeded">Permessi richiesti</string>
+    <string name="strMessagePermission">Questo permesso e\' necessario per accedere alla fotocamera.</string>
+    <string name="first_game_subtitle">Tap per giocare!</string>
+
+</resources>

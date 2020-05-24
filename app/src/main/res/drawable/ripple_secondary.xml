@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/colorPrimary">
+
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/colorPrimary"
+                android:endColor="@color/colorPrimaryLight"/>
+            <stroke
+                android:width="@dimen/btnStrokeWidth"
+                android:color="@color/colorPrimaryDark"/>
+            <corners
+                android:radius="@dimen/btnCornerRadius"/>
+        </shape>
+    </item>
+</ripple>
